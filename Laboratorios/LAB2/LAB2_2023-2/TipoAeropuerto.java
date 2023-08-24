@@ -1,0 +1,3 @@
+enum TipoAeropuerto{
+	Nacional,Internacional
+}
