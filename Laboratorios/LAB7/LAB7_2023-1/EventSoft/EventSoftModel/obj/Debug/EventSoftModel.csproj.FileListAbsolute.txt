@@ -1,0 +1,6 @@
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftModel\bin\Debug\EventSoftModel.dll
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftModel\bin\Debug\EventSoftModel.pdb
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftModel\obj\Debug\EventSoftModel.csproj.AssemblyReference.cache
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftModel\obj\Debug\EventSoftModel.csproj.CoreCompileInputs.cache
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftModel\obj\Debug\EventSoftModel.dll
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftModel\obj\Debug\EventSoftModel.pdb

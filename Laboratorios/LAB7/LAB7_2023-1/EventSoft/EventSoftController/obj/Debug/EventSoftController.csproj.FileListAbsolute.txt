@@ -1,0 +1,16 @@
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\bin\Debug\EventSoftController.dll
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\bin\Debug\EventSoftController.pdb
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\bin\Debug\EventSoftDBManager.dll
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\bin\Debug\EventSoftModel.dll
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\bin\Debug\MySql.Data.dll
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\bin\Debug\System.Memory.dll
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\bin\Debug\System.Numerics.Vectors.dll
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\bin\Debug\System.Buffers.dll
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\bin\Debug\EventSoftDBManager.pdb
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\bin\Debug\EventSoftModel.pdb
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\obj\Debug\EventSoftController.csproj.AssemblyReference.cache
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\obj\Debug\EventSoftController.csproj.CoreCompileInputs.cache
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\obj\Debug\EventSoftController.csproj.CopyComplete
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\obj\Debug\EventSoftController.dll
+D:\Johan\Descargas\TEATRO\EventSoft\EventSoftController\obj\Debug\EventSoftController.pdb

@@ -1,0 +1,4 @@
+hostname: db-lp2.cbjkpgavmonw.us-east-1.rds.amazonaws.com
+username: cosmodev
+password: inf282lp2binarysynergy
+schema: inf282
