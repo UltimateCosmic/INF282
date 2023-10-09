@@ -1,0 +1,7 @@
+Pregunta 1:
+Por defecto, si no indicamos una clase como publica se declara como default (internal). Esto significa que la clase no puede ser utilizada (accesible) en otras clases a no ser que la declaremos como pública.
+
+Pregunta 2:
+Construyendo Base
+Construyendo Derivada
+Programa finalizado
