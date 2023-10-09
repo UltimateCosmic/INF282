@@ -1,0 +1,6 @@
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftModel\bin\Debug\EduSoftModel.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftModel\bin\Debug\EduSoftModel.pdb
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftModel\obj\Debug\EduSoftModel.csproj.AssemblyReference.cache
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftModel\obj\Debug\EduSoftModel.csproj.CoreCompileInputs.cache
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftModel\obj\Debug\EduSoftModel.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftModel\obj\Debug\EduSoftModel.pdb

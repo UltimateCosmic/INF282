@@ -1,0 +1,6 @@
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftDBManager\bin\Debug\EduSoftDBManager.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftDBManager\bin\Debug\EduSoftDBManager.pdb
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftDBManager\obj\Debug\EduSoftDBManager.csproj.AssemblyReference.cache
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftDBManager\obj\Debug\EduSoftDBManager.csproj.CoreCompileInputs.cache
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftDBManager\obj\Debug\EduSoftDBManager.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftDBManager\obj\Debug\EduSoftDBManager.pdb

@@ -1,0 +1,16 @@
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\bin\Debug\EduSoftController.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\bin\Debug\EduSoftController.pdb
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\bin\Debug\EduSoftDBManager.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\bin\Debug\EduSoftModel.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\bin\Debug\MySql.Data.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\bin\Debug\System.Memory.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\bin\Debug\System.Numerics.Vectors.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\bin\Debug\System.Buffers.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\bin\Debug\EduSoftDBManager.pdb
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\bin\Debug\EduSoftModel.pdb
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\obj\Debug\EduSoftController.csproj.AssemblyReference.cache
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\obj\Debug\EduSoftController.csproj.CoreCompileInputs.cache
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\obj\Debug\EduSoftController.csproj.CopyComplete
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\obj\Debug\EduSoftController.dll
+D:\Johan\Escritorio\LP2\INF282\Examenes\EX1\EX1_2023-1\EduSoft\EduSoftController\obj\Debug\EduSoftController.pdb
