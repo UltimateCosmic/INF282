@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+
+    Copyright (c) 2010-2017 Oracle and/or its affiliates. All rights reserved.
+
+    The contents of this file are subject to the terms of either the GNU
+    General Public License Version 2 only ("GPL") or the Common Development
+    and Distribution License("CDDL") (collectively, the "License").  You
+    may not use this file except in compliance with the License.  You can
+    obtain a copy of the License at
+    https://oss.oracle.com/licenses/CDDL+GPL-1.1
+    or LICENSE.txt.  See the License for the specific
+    language governing permissions and limitations under the License.
+
+    When distributing the software, include this License Header Notice in each
+    file and include the License file at LICENSE.txt.
+
+    GPL Classpath Exception:
+    Oracle designates this particular file as subject to the "Classpath"
+    exception as provided by Oracle in the GPL Version 2 section of the License
+    file that accompanied this code.
+
+    Modifications:
+    If applicable, add the following below the License Header, with the fields
+    enclosed by brackets [] replaced by your own identifying information:
+    "Portions Copyright [year] [name of copyright owner]"
+
+    Contributor(s):
+    If you wish your version of this file to be governed by only the CDDL or
+    only the GPL Version 2, indicate your decision by adding "[Contributor]
+    elects to include this software in this distribution under the [CDDL or GPL
+    Version 2] license."  If you don't indicate a single choice of license, a
+    recipient has the option to distribute your version of this file under
+    either the CDDL, the GPL Version 2 or to extend the choice of license to
+    its licensees as provided above.  However, if you add GPL Version 2 code
+    and therefore, elected the GPL Version 2 license, then the option applies
+    only if the new code is made subject to such option by the copyright
+    holder.
+
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.w3.org/2005/08/addressing" targetNamespace="http://www.w3.org/2005/08/addressing" blockDefault="#all" elementFormDefault="qualified" finalDefault="" attributeFormDefault="unqualified">
+	
+	<!-- Constructs from the WS-Addressing Core -->
+
+	<xs:element name="EndpointReference" type="tns:EndpointReferenceType"/>
+	<xs:complexType name="EndpointReferenceType" mixed="false">
+		<xs:sequence>
+			<xs:element name="Address" type="tns:AttributedURIType"/>
+			<xs:element ref="tns:ReferenceParameters" minOccurs="0"/>
+			<xs:element ref="tns:Metadata" minOccurs="0"/>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##other" processContents="lax"/>
+	</xs:complexType>
+	
+	<xs:element name="ReferenceParameters" type="tns:ReferenceParametersType"/>
+	<xs:complexType name="ReferenceParametersType" mixed="false">
+		<xs:sequence>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##other" processContents="lax"/>
+	</xs:complexType>
+	
+	<xs:element name="Metadata" type="tns:MetadataType"/>
+	<xs:complexType name="MetadataType" mixed="false">
+		<xs:sequence>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##other" processContents="lax"/>
+	</xs:complexType>
+	
+	<xs:element name="MessageID" type="tns:AttributedURIType"/>
+	<xs:element name="RelatesTo" type="tns:RelatesToType"/>
+	<xs:complexType name="RelatesToType" mixed="false">
+		<xs:simpleContent>
+			<xs:extension base="xs:anyURI">
+				<xs:attribute name="RelationshipType" type="tns:RelationshipTypeOpenEnum" use="optional" default="http://www.w3.org/2005/08/addressing/reply"/>
+				<xs:anyAttribute namespace="##other" processContents="lax"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:simpleType name="RelationshipTypeOpenEnum">
+		<xs:union memberTypes="tns:RelationshipType xs:anyURI"/>
+	</xs:simpleType>
+	
+	<xs:simpleType name="RelationshipType">
+		<xs:restriction base="xs:anyURI">
+			<xs:enumeration value="http://www.w3.org/2005/08/addressing/reply"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="ReplyTo" type="tns:EndpointReferenceType"/>
+	<xs:element name="From" type="tns:EndpointReferenceType"/>
+	<xs:element name="FaultTo" type="tns:EndpointReferenceType"/>
+	<xs:element name="To" type="tns:AttributedURIType"/>
+	<xs:element name="Action" type="tns:AttributedURIType"/>
+
+	<xs:complexType name="AttributedURIType" mixed="false">
+		<xs:simpleContent>
+			<xs:extension base="xs:anyURI">
+				<xs:anyAttribute namespace="##other" processContents="lax"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<!-- Constructs from the WS-Addressing SOAP binding -->
+
+	<xs:attribute name="IsReferenceParameter" type="xs:boolean"/>
+	
+	<xs:simpleType name="FaultCodesOpenEnumType">
+		<xs:union memberTypes="tns:FaultCodesType xs:QName"/>
+	</xs:simpleType>
+	
+	<xs:simpleType name="FaultCodesType">
+		<xs:restriction base="xs:QName">
+			<xs:enumeration value="tns:InvalidAddressingHeader"/>
+			<xs:enumeration value="tns:InvalidAddress"/>
+			<xs:enumeration value="tns:InvalidEPR"/>
+			<xs:enumeration value="tns:InvalidCardinality"/>
+			<xs:enumeration value="tns:MissingAddressInEPR"/>
+			<xs:enumeration value="tns:DuplicateMessageID"/>
+			<xs:enumeration value="tns:ActionMismatch"/>
+			<xs:enumeration value="tns:MessageAddressingHeaderRequired"/>
+			<xs:enumeration value="tns:DestinationUnreachable"/>
+			<xs:enumeration value="tns:ActionNotSupported"/>
+			<xs:enumeration value="tns:EndpointUnavailable"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="RetryAfter" type="tns:AttributedUnsignedLongType"/>
+	<xs:complexType name="AttributedUnsignedLongType" mixed="false">
+		<xs:simpleContent>
+			<xs:extension base="xs:unsignedLong">
+				<xs:anyAttribute namespace="##other" processContents="lax"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:element name="ProblemHeaderQName" type="tns:AttributedQNameType"/>
+	<xs:complexType name="AttributedQNameType" mixed="false">
+		<xs:simpleContent>
+			<xs:extension base="xs:QName">
+				<xs:anyAttribute namespace="##other" processContents="lax"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:element name="ProblemIRI" type="tns:AttributedURIType"/>
+	
+	<xs:element name="ProblemAction" type="tns:ProblemActionType"/>
+	<xs:complexType name="ProblemActionType" mixed="false">
+		<xs:sequence>
+			<xs:element ref="tns:Action" minOccurs="0"/>
+			<xs:element name="SoapAction" minOccurs="0" type="xs:anyURI"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##other" processContents="lax"/>
+	</xs:complexType>
+	
+</xs:schema>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.smashsoft.pucp.edu.pe/" targetNamespace="http://services.smashsoft.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="insertar" type="tns:insertar" />
+  <xs:element name="insertarResponse" type="tns:insertarResponse" />
+  <xs:element name="listarPorNombre" type="tns:listarPorNombre" />
+  <xs:element name="listarPorNombreResponse" type="tns:listarPorNombreResponse" />
+  <xs:element name="listarTodas" type="tns:listarTodas" />
+  <xs:element name="listarTodasResponse" type="tns:listarTodasResponse" />
+  <xs:complexType name="listarTodas">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:plataforma" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="plataforma">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idPlataforma" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="personaje" type="tns:personaje" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="personaje">
+    <xs:sequence>
+      <xs:element name="adhesionParedes" type="xs:boolean" />
+      <xs:element name="arrastre" type="xs:boolean" />
+      <xs:element name="cantidadMaxSaltos" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaAparicion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="foto" type="xs:base64Binary" />
+      <xs:element name="idPersonaje" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="peso" type="xs:double" />
+      <xs:element minOccurs="0" name="plataforma" type="tns:plataforma" />
+      <xs:element name="saltoPared" type="xs:boolean" />
+      <xs:element minOccurs="0" name="universo" type="tns:universo" />
+      <xs:element name="velocidadAlCaminar" type="xs:double" />
+      <xs:element name="velocidadAlCorrer" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="universo">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idUniverso" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:universo" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
