@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://softproductions.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ProductoraWS" targetNamespace="http://softproductions.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftProductionsWebServices/ProductoraWS?xsd=1" namespace="http://softproductions.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarProductorasTodas">
+    <part name="parameters" element="tns:listarProductorasTodas" />
+  </message>
+  <message name="listarProductorasTodasResponse">
+    <part name="parameters" element="tns:listarProductorasTodasResponse" />
+  </message>
+  <message name="listarDirectorPorNombre">
+    <part name="parameters" element="tns:listarDirectorPorNombre" />
+  </message>
+  <message name="listarDirectorPorNombreResponse">
+    <part name="parameters" element="tns:listarDirectorPorNombreResponse" />
+  </message>
+  <message name="listarPorNombre">
+    <part name="parameters" element="tns:listarPorNombre" />
+  </message>
+  <message name="listarPorNombreResponse">
+    <part name="parameters" element="tns:listarPorNombreResponse" />
+  </message>
+  <message name="listarPorIdSerie">
+    <part name="parameters" element="tns:listarPorIdSerie" />
+  </message>
+  <message name="listarPorIdSerieResponse">
+    <part name="parameters" element="tns:listarPorIdSerieResponse" />
+  </message>
+  <message name="insertarSerieTelevision">
+    <part name="parameters" element="tns:insertarSerieTelevision" />
+  </message>
+  <message name="insertarSerieTelevisionResponse">
+    <part name="parameters" element="tns:insertarSerieTelevisionResponse" />
+  </message>
+  <portType name="ProductoraWS">
+    <operation name="listarProductorasTodas">
+      <input wsam:Action="http://softproductions.pucp.edu.pe/ProductoraWS/listarProductorasTodasRequest" message="tns:listarProductorasTodas" />
+      <output wsam:Action="http://softproductions.pucp.edu.pe/ProductoraWS/listarProductorasTodasResponse" message="tns:listarProductorasTodasResponse" />
+    </operation>
+    <operation name="listarDirectorPorNombre">
+      <input wsam:Action="http://softproductions.pucp.edu.pe/ProductoraWS/listarDirectorPorNombreRequest" message="tns:listarDirectorPorNombre" />
+      <output wsam:Action="http://softproductions.pucp.edu.pe/ProductoraWS/listarDirectorPorNombreResponse" message="tns:listarDirectorPorNombreResponse" />
+    </operation>
+    <operation name="listarPorNombre">
+      <input wsam:Action="http://softproductions.pucp.edu.pe/ProductoraWS/listarPorNombreRequest" message="tns:listarPorNombre" />
+      <output wsam:Action="http://softproductions.pucp.edu.pe/ProductoraWS/listarPorNombreResponse" message="tns:listarPorNombreResponse" />
+    </operation>
+    <operation name="listarPorIdSerie">
+      <input wsam:Action="http://softproductions.pucp.edu.pe/ProductoraWS/listarPorIdSerieRequest" message="tns:listarPorIdSerie" />
+      <output wsam:Action="http://softproductions.pucp.edu.pe/ProductoraWS/listarPorIdSerieResponse" message="tns:listarPorIdSerieResponse" />
+    </operation>
+    <operation name="insertarSerieTelevision">
+      <input wsam:Action="http://softproductions.pucp.edu.pe/ProductoraWS/insertarSerieTelevisionRequest" message="tns:insertarSerieTelevision" />
+      <output wsam:Action="http://softproductions.pucp.edu.pe/ProductoraWS/insertarSerieTelevisionResponse" message="tns:insertarSerieTelevisionResponse" />
+    </operation>
+  </portType>
+  <binding name="ProductoraWSPortBinding" type="tns:ProductoraWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarProductorasTodas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarDirectorPorNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPorNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPorIdSerie">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarSerieTelevision">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ProductoraWS">
+    <port name="ProductoraWSPort" binding="tns:ProductoraWSPortBinding">
+      <soap:address location="http://localhost:8080/SoftProductionsWebServices/ProductoraWS" />
+    </port>
+  </service>
+</definitions>

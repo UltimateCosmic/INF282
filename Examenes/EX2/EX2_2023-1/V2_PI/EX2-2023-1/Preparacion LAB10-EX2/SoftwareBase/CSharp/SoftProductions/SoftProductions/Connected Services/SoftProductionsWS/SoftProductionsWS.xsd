@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softproductions.pucp.edu.pe/" targetNamespace="http://services.softproductions.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="insertarSerieTV" type="tns:insertarSerieTV" />
+  <xs:element name="insertarSerieTVResponse" type="tns:insertarSerieTVResponse" />
+  <xs:element name="listarCapitulosXID" type="tns:listarCapitulosXID" />
+  <xs:element name="listarCapitulosXIDResponse" type="tns:listarCapitulosXIDResponse" />
+  <xs:element name="listarSeriesXNombre" type="tns:listarSeriesXNombre" />
+  <xs:element name="listarSeriesXNombreResponse" type="tns:listarSeriesXNombreResponse" />
+  <xs:element name="listarTodasProductoras" type="tns:listarTodasProductoras" />
+  <xs:element name="listarTodasProductorasResponse" type="tns:listarTodasProductorasResponse" />
+  <xs:element name="listarTodosDirectores" type="tns:listarTodosDirectores" />
+  <xs:element name="listarTodosDirectoresResponse" type="tns:listarTodosDirectoresResponse" />
+  <xs:complexType name="insertarSerieTV">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="serie" type="tns:serieTelevision" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="serieTelevision">
+    <xs:sequence>
+      <xs:element name="activa" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="capitulos" nillable="true" type="tns:capitulo" />
+      <xs:element name="costoProduccion" type="xs:double" />
+      <xs:element minOccurs="0" name="fechaEmision" type="xs:dateTime" />
+      <xs:element name="idSerieTelevision" type="xs:int" />
+      <xs:element name="idioma" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="nombreSerie" type="xs:string" />
+      <xs:element minOccurs="0" name="portada" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="productora" type="tns:productora" />
+      <xs:element minOccurs="0" name="sipnosis" type="xs:string" />
+      <xs:element name="temporada" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="capitulo">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="director" type="tns:director" />
+      <xs:element minOccurs="0" name="duracion" type="xs:string" />
+      <xs:element name="idCapitulo" type="xs:int" />
+      <xs:element minOccurs="0" name="nombreCapitulo" type="xs:string" />
+      <xs:element name="numeroCapitulo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="director">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="apellidoDirector" type="xs:string" />
+      <xs:element name="idDirector" type="xs:int" />
+      <xs:element minOccurs="0" name="nacionalidad" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreDirector" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productora">
+    <xs:sequence>
+      <xs:element name="activa" type="xs:boolean" />
+      <xs:element name="b" type="xs:int" />
+      <xs:element name="g" type="xs:int" />
+      <xs:element name="idProductora" type="xs:int" />
+      <xs:element minOccurs="0" name="logo" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="nombreProductora" type="xs:string" />
+      <xs:element name="r" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarSerieTVResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosDirectores">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosDirectoresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:director" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodasProductoras">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodasProductorasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:productora" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarSeriesXNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarSeriesXNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:serieTelevision" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarCapitulosXID">
+    <xs:sequence>
+      <xs:element name="idSerie" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarCapitulosXIDResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:capitulo" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
