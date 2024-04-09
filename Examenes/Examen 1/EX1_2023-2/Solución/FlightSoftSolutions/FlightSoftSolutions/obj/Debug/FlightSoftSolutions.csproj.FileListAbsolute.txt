@@ -1,0 +1,12 @@
+D:\Users\fpaz.INFOR34W10\source\repos\FlightSoftSolutions\FlightSoftSolutions\bin\Debug\FlightSoftSolutions.exe.config
+D:\Users\fpaz.INFOR34W10\source\repos\FlightSoftSolutions\FlightSoftSolutions\bin\Debug\FlightSoftSolutions.exe
+D:\Users\fpaz.INFOR34W10\source\repos\FlightSoftSolutions\FlightSoftSolutions\bin\Debug\FlightSoftSolutions.pdb
+D:\Users\fpaz.INFOR34W10\source\repos\FlightSoftSolutions\FlightSoftSolutions\obj\Debug\FlightSoftSolutions.csproj.AssemblyReference.cache
+D:\Users\fpaz.INFOR34W10\source\repos\FlightSoftSolutions\FlightSoftSolutions\obj\Debug\FlightSoftSolutions.csproj.SuggestedBindingRedirects.cache
+D:\Users\fpaz.INFOR34W10\source\repos\FlightSoftSolutions\FlightSoftSolutions\obj\Debug\FlightSoftSolutions.frmBusquedaAeropuertos.resources
+D:\Users\fpaz.INFOR34W10\source\repos\FlightSoftSolutions\FlightSoftSolutions\obj\Debug\FlightSoftSolutions.frmGestionAeropuertos.resources
+D:\Users\fpaz.INFOR34W10\source\repos\FlightSoftSolutions\FlightSoftSolutions\obj\Debug\FlightSoftSolutions.Properties.Resources.resources
+D:\Users\fpaz.INFOR34W10\source\repos\FlightSoftSolutions\FlightSoftSolutions\obj\Debug\FlightSoftSolutions.csproj.GenerateResource.cache
+D:\Users\fpaz.INFOR34W10\source\repos\FlightSoftSolutions\FlightSoftSolutions\obj\Debug\FlightSoftSolutions.csproj.CoreCompileInputs.cache
+D:\Users\fpaz.INFOR34W10\source\repos\FlightSoftSolutions\FlightSoftSolutions\obj\Debug\FlightSoftSolutions.exe
+D:\Users\fpaz.INFOR34W10\source\repos\FlightSoftSolutions\FlightSoftSolutions\obj\Debug\FlightSoftSolutions.pdb

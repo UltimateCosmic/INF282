@@ -1,0 +1,13 @@
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\bin\Debug\GameSoft.exe.config
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\bin\Debug\GameSoft.exe
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\bin\Debug\GameSoft.pdb
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.csproj.AssemblyReference.cache
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.csproj.SuggestedBindingRedirects.cache
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.frmBusquedaDesarrolladoras.resources
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.frmBusquedaVideojuegos.resources
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.frmGestionVideojuegos.resources
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.Properties.Resources.resources
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.csproj.GenerateResource.cache
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.csproj.CoreCompileInputs.cache
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.exe
+T:\Laboratorio 09 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.pdb

@@ -1,3 +1,0 @@
-enum Dedicacion {
-	TC, TPA
-}

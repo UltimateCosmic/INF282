@@ -1,0 +1,13 @@
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\bin\Debug\GameSoft.exe.config
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\bin\Debug\GameSoft.exe
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\bin\Debug\GameSoft.pdb
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.csproj.AssemblyReference.cache
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.csproj.SuggestedBindingRedirects.cache
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.frmBusquedaBlanco.resources
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.frmBusquedaPokemons.resources
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.frmGestionPokemons.resources
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.Properties.Resources.resources
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.csproj.GenerateResource.cache
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.csproj.CoreCompileInputs.cache
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.exe
+T:\20203350\Examen Final - INF282 - 2023 - 2\CSharp\GameSoft\GameSoft\obj\Debug\GameSoft.pdb

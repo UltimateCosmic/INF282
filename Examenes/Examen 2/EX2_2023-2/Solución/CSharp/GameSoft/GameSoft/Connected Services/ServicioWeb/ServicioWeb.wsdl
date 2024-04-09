@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.gamesoft.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ServicioWeb" targetNamespace="http://services.gamesoft.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/GameSoftWebServices/ServicioWeb?xsd=1" namespace="http://services.gamesoft.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarMovimientosNivelPorID">
+    <part name="parameters" element="tns:listarMovimientosNivelPorID" />
+  </message>
+  <message name="listarMovimientosNivelPorIDResponse">
+    <part name="parameters" element="tns:listarMovimientosNivelPorIDResponse" />
+  </message>
+  <message name="insertarPokemon">
+    <part name="parameters" element="tns:insertarPokemon" />
+  </message>
+  <message name="insertarPokemonResponse">
+    <part name="parameters" element="tns:insertarPokemonResponse" />
+  </message>
+  <message name="listarPokemonesPorNombre">
+    <part name="parameters" element="tns:listarPokemonesPorNombre" />
+  </message>
+  <message name="listarPokemonesPorNombreResponse">
+    <part name="parameters" element="tns:listarPokemonesPorNombreResponse" />
+  </message>
+  <message name="listarTodasClases">
+    <part name="parameters" element="tns:listarTodasClases" />
+  </message>
+  <message name="listarTodasClasesResponse">
+    <part name="parameters" element="tns:listarTodasClasesResponse" />
+  </message>
+  <message name="listarTodosTiposElementales">
+    <part name="parameters" element="tns:listarTodosTiposElementales" />
+  </message>
+  <message name="listarTodosTiposElementalesResponse">
+    <part name="parameters" element="tns:listarTodosTiposElementalesResponse" />
+  </message>
+  <message name="listarBlancosPorNombre">
+    <part name="parameters" element="tns:listarBlancosPorNombre" />
+  </message>
+  <message name="listarBlancosPorNombreResponse">
+    <part name="parameters" element="tns:listarBlancosPorNombreResponse" />
+  </message>
+  <portType name="ServicioWeb">
+    <operation name="listarMovimientosNivelPorID">
+      <input wsam:Action="http://services.gamesoft.pucp.edu.pe/ServicioWeb/listarMovimientosNivelPorIDRequest" message="tns:listarMovimientosNivelPorID" />
+      <output wsam:Action="http://services.gamesoft.pucp.edu.pe/ServicioWeb/listarMovimientosNivelPorIDResponse" message="tns:listarMovimientosNivelPorIDResponse" />
+    </operation>
+    <operation name="insertarPokemon">
+      <input wsam:Action="http://services.gamesoft.pucp.edu.pe/ServicioWeb/insertarPokemonRequest" message="tns:insertarPokemon" />
+      <output wsam:Action="http://services.gamesoft.pucp.edu.pe/ServicioWeb/insertarPokemonResponse" message="tns:insertarPokemonResponse" />
+    </operation>
+    <operation name="listarPokemonesPorNombre">
+      <input wsam:Action="http://services.gamesoft.pucp.edu.pe/ServicioWeb/listarPokemonesPorNombreRequest" message="tns:listarPokemonesPorNombre" />
+      <output wsam:Action="http://services.gamesoft.pucp.edu.pe/ServicioWeb/listarPokemonesPorNombreResponse" message="tns:listarPokemonesPorNombreResponse" />
+    </operation>
+    <operation name="listarTodasClases">
+      <input wsam:Action="http://services.gamesoft.pucp.edu.pe/ServicioWeb/listarTodasClasesRequest" message="tns:listarTodasClases" />
+      <output wsam:Action="http://services.gamesoft.pucp.edu.pe/ServicioWeb/listarTodasClasesResponse" message="tns:listarTodasClasesResponse" />
+    </operation>
+    <operation name="listarTodosTiposElementales">
+      <input wsam:Action="http://services.gamesoft.pucp.edu.pe/ServicioWeb/listarTodosTiposElementalesRequest" message="tns:listarTodosTiposElementales" />
+      <output wsam:Action="http://services.gamesoft.pucp.edu.pe/ServicioWeb/listarTodosTiposElementalesResponse" message="tns:listarTodosTiposElementalesResponse" />
+    </operation>
+    <operation name="listarBlancosPorNombre">
+      <input wsam:Action="http://services.gamesoft.pucp.edu.pe/ServicioWeb/listarBlancosPorNombreRequest" message="tns:listarBlancosPorNombre" />
+      <output wsam:Action="http://services.gamesoft.pucp.edu.pe/ServicioWeb/listarBlancosPorNombreResponse" message="tns:listarBlancosPorNombreResponse" />
+    </operation>
+  </portType>
+  <binding name="ServicioWebPortBinding" type="tns:ServicioWeb">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarMovimientosNivelPorID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarPokemon">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPokemonesPorNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodasClases">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosTiposElementales">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarBlancosPorNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ServicioWeb">
+    <port name="ServicioWebPort" binding="tns:ServicioWebPortBinding">
+      <soap:address location="http://localhost:8080/GameSoftWebServices/ServicioWeb" />
+    </port>
+  </service>
+</definitions>

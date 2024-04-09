@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.gamesoft.pucp.edu.pe/" targetNamespace="http://services.gamesoft.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="insertarPokemon" type="tns:insertarPokemon" />
+  <xs:element name="insertarPokemonResponse" type="tns:insertarPokemonResponse" />
+  <xs:element name="listarBlancosPorNombre" type="tns:listarBlancosPorNombre" />
+  <xs:element name="listarBlancosPorNombreResponse" type="tns:listarBlancosPorNombreResponse" />
+  <xs:element name="listarMovimientosNivelPorID" type="tns:listarMovimientosNivelPorID" />
+  <xs:element name="listarMovimientosNivelPorIDResponse" type="tns:listarMovimientosNivelPorIDResponse" />
+  <xs:element name="listarPokemonesPorNombre" type="tns:listarPokemonesPorNombre" />
+  <xs:element name="listarPokemonesPorNombreResponse" type="tns:listarPokemonesPorNombreResponse" />
+  <xs:element name="listarTodasClases" type="tns:listarTodasClases" />
+  <xs:element name="listarTodasClasesResponse" type="tns:listarTodasClasesResponse" />
+  <xs:element name="listarTodosTiposElementales" type="tns:listarTodosTiposElementales" />
+  <xs:element name="listarTodosTiposElementalesResponse" type="tns:listarTodosTiposElementalesResponse" />
+  <xs:complexType name="listarBlancosPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarBlancosPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:blanco" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="blanco">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="blancoMovimiento" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="idBlanco" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPokemonesPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPokemonesPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pokemon" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pokemon">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="altura" type="xs:double" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="foto" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="generacion" type="tns:generacion" />
+      <xs:element name="idPokemon" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="movimientosNivel" nillable="true" type="tns:movimientoNivel" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroPokedexNacional" type="xs:string" />
+      <xs:element name="peso" type="xs:double" />
+      <xs:element minOccurs="0" name="tipo1" type="tns:tipoElemental" />
+      <xs:element minOccurs="0" name="tipo2" type="tns:tipoElemental" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="movimientoNivel">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="blanco" type="tns:blanco" />
+      <xs:element minOccurs="0" name="clase" type="tns:clase" />
+      <xs:element name="exactitud" type="xs:int" />
+      <xs:element name="idMovimientoNivel" type="xs:int" />
+      <xs:element name="nivelAprendizaje" type="xs:int" />
+      <xs:element minOccurs="0" name="nombreMovimiento" type="xs:string" />
+      <xs:element name="poder" type="xs:int" />
+      <xs:element name="puntosPoder" type="xs:int" />
+      <xs:element minOccurs="0" name="tipo" type="tns:tipoElemental" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clase">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="claseMovimiento" type="xs:string" />
+      <xs:element minOccurs="0" name="foto" type="xs:base64Binary" />
+      <xs:element name="idClase" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoElemental">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="foto" type="xs:base64Binary" />
+      <xs:element name="idTipoElemental" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="valorAzul" type="xs:int" />
+      <xs:element name="valorRojo" type="xs:int" />
+      <xs:element name="valorVerde" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodasClases">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodasClasesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:clase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarMovimientosNivelPorID">
+    <xs:sequence>
+      <xs:element name="idPokemon" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarMovimientosNivelPorIDResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:movimientoNivel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPokemon">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pokemon" type="tns:pokemon" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPokemonResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosTiposElementales">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosTiposElementalesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:tipoElemental" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="generacion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PRIMERA_GENERACION" />
+      <xs:enumeration value="SEGUNDA_GENERACION" />
+      <xs:enumeration value="TERCERA_GENERACION" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

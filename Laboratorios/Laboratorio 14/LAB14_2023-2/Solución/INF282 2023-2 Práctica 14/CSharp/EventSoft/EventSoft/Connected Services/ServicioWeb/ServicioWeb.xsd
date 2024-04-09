@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.eventsoft.pucp.edu.pe/" targetNamespace="http://services.eventsoft.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="insertarEvento" type="tns:insertarEvento" />
+  <xs:element name="insertarEventoResponse" type="tns:insertarEventoResponse" />
+  <xs:element name="listarArtistasPorNombre" type="tns:listarArtistasPorNombre" />
+  <xs:element name="listarArtistasPorNombreResponse" type="tns:listarArtistasPorNombreResponse" />
+  <xs:element name="listarEstablecimientosPorNombre" type="tns:listarEstablecimientosPorNombre" />
+  <xs:element name="listarEstablecimientosPorNombreResponse" type="tns:listarEstablecimientosPorNombreResponse" />
+  <xs:complexType name="listarArtistasPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarArtistasPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:artista" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="artista">
+    <xs:sequence>
+      <xs:element name="idArtista" type="xs:int" />
+      <xs:element minOccurs="0" name="nacionalidad" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarEstablecimientosPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarEstablecimientosPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:establecimiento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="establecimiento">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="capacidadAsientos" type="xs:int" />
+      <xs:element name="idEstablecimiento" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="tieneEstacionamiento" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarEvento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="evento" type="tns:evento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="evento">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="artista" type="tns:artista" />
+      <xs:element name="cantidadEntradasDisponibles" type="xs:int" />
+      <xs:element name="costoRealizacion" type="xs:double" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="establecimiento" type="tns:establecimiento" />
+      <xs:element minOccurs="0" name="fechaEvento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="foto" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="horaEvento" type="xs:string" />
+      <xs:element name="idEvento" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="tipoEvento" type="tns:tipoEvento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarEventoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="tipoEvento">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CONCIERTO" />
+      <xs:enumeration value="TEATRO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

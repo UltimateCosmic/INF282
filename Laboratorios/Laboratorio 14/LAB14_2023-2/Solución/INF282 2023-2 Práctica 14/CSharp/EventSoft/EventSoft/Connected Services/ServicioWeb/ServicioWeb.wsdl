@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.eventsoft.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ServicioWeb" targetNamespace="http://services.eventsoft.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/EventSoftWebServices/ServicioWeb?xsd=1" namespace="http://services.eventsoft.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarEstablecimientosPorNombre">
+    <part name="parameters" element="tns:listarEstablecimientosPorNombre" />
+  </message>
+  <message name="listarEstablecimientosPorNombreResponse">
+    <part name="parameters" element="tns:listarEstablecimientosPorNombreResponse" />
+  </message>
+  <message name="insertarEvento">
+    <part name="parameters" element="tns:insertarEvento" />
+  </message>
+  <message name="insertarEventoResponse">
+    <part name="parameters" element="tns:insertarEventoResponse" />
+  </message>
+  <message name="listarArtistasPorNombre">
+    <part name="parameters" element="tns:listarArtistasPorNombre" />
+  </message>
+  <message name="listarArtistasPorNombreResponse">
+    <part name="parameters" element="tns:listarArtistasPorNombreResponse" />
+  </message>
+  <portType name="ServicioWeb">
+    <operation name="listarEstablecimientosPorNombre">
+      <input wsam:Action="http://services.eventsoft.pucp.edu.pe/ServicioWeb/listarEstablecimientosPorNombreRequest" message="tns:listarEstablecimientosPorNombre" />
+      <output wsam:Action="http://services.eventsoft.pucp.edu.pe/ServicioWeb/listarEstablecimientosPorNombreResponse" message="tns:listarEstablecimientosPorNombreResponse" />
+    </operation>
+    <operation name="insertarEvento">
+      <input wsam:Action="http://services.eventsoft.pucp.edu.pe/ServicioWeb/insertarEventoRequest" message="tns:insertarEvento" />
+      <output wsam:Action="http://services.eventsoft.pucp.edu.pe/ServicioWeb/insertarEventoResponse" message="tns:insertarEventoResponse" />
+    </operation>
+    <operation name="listarArtistasPorNombre">
+      <input wsam:Action="http://services.eventsoft.pucp.edu.pe/ServicioWeb/listarArtistasPorNombreRequest" message="tns:listarArtistasPorNombre" />
+      <output wsam:Action="http://services.eventsoft.pucp.edu.pe/ServicioWeb/listarArtistasPorNombreResponse" message="tns:listarArtistasPorNombreResponse" />
+    </operation>
+  </portType>
+  <binding name="ServicioWebPortBinding" type="tns:ServicioWeb">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarEstablecimientosPorNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarEvento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarArtistasPorNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ServicioWeb">
+    <port name="ServicioWebPort" binding="tns:ServicioWebPortBinding">
+      <soap:address location="http://localhost:8080/EventSoftWebServices/ServicioWeb" />
+    </port>
+  </service>
+</definitions>

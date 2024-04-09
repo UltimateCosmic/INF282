@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.gamesoft.pucp.edu.pe/" targetNamespace="http://services.gamesoft.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="insertarVideojuego" type="tns:insertarVideojuego" />
+  <xs:element name="insertarVideojuegoResponse" type="tns:insertarVideojuegoResponse" />
+  <xs:element name="listarDesarrolladorasPorNombre" type="tns:listarDesarrolladorasPorNombre" />
+  <xs:element name="listarDesarrolladorasPorNombreResponse" type="tns:listarDesarrolladorasPorNombreResponse" />
+  <xs:element name="listarTodasGeneros" type="tns:listarTodasGeneros" />
+  <xs:element name="listarTodasGenerosResponse" type="tns:listarTodasGenerosResponse" />
+  <xs:complexType name="insertarVideojuego">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="videojuego" type="tns:videojuego" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="videojuego">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="clasificacionESRB" type="xs:unsignedShort" />
+      <xs:element name="costoDesarrollo" type="xs:double" />
+      <xs:element minOccurs="0" name="desarrolladora" type="tns:desarrolladora" />
+      <xs:element minOccurs="0" name="fechaLanzamiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="genero" type="tns:genero" />
+      <xs:element name="idVideojuego" type="xs:int" />
+      <xs:element minOccurs="0" name="materialPromocionalPDF" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="portada" type="xs:base64Binary" />
+      <xs:element name="versionNintendoSwitch" type="xs:boolean" />
+      <xs:element name="versionPC" type="xs:boolean" />
+      <xs:element name="versionPlaystation5" type="xs:boolean" />
+      <xs:element name="versionSmartphone" type="xs:boolean" />
+      <xs:element name="versionXboxSeries" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="desarrolladora">
+    <xs:sequence>
+      <xs:element name="idDesarrolladora" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="pais" type="tns:pais" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pais">
+    <xs:sequence>
+      <xs:element name="idPais" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="genero">
+    <xs:sequence>
+      <xs:element name="idGenero" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarVideojuegoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodasGeneros">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodasGenerosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:genero" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarDesarrolladorasPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarDesarrolladorasPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:desarrolladora" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

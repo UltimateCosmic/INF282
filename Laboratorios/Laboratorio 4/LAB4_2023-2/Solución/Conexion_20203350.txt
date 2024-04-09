@@ -1,0 +1,4 @@
+hostname: lp2-labs-inf282-2023-2.cbjkpgavmonw.us-east-1.rds.amazonaws.com
+username: master
+password: lp2labsinf282
+esquema: inf282
