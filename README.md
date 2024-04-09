@@ -77,7 +77,7 @@ public class Cientifico extends Persona {
 	public void investigar () {…}
 }
 ```
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0691536a-9e35-40b3-8cee-c104c225a5c6/Untitled.png)
+![Untitled](./Adicional/Pictures/Untitled2.png)
 ## Principios de POO
 - Encapsulamiento: Al restringir el acceso de otros objetos a sus datos. Acceso indirecto, por sus métodos.
 - Herencia: Permite crear nuevas clases que reutilizan el comportamiento de otras clases.
@@ -131,7 +131,7 @@ public class Principal{
 	}
 }
 ```
-![Las clases Cuadrado y Triangulo implementan el método calcular área de forma específica.](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f4191010-73a0-43e8-8201-0f38aee1247b/Untitled.png)
+![Las clases Cuadrado y Triangulo implementan el método calcular área de forma específica.](./Adicional/Pictures/Untitled3.png)
 Las clases Cuadrado y Triangulo implementan el método calcular área de forma específica.
 ### Override
 El uso de **`@Override`** en Java es una anotación que se coloca antes de un método en una clase para indicar que ese método está destinado a sobrescribir (override) un método de la clase padre o de una interfaz implementada. Esta anotación es una herramienta útil para mejorar la claridad del código y evitar errores sutiles al sobrescribir métodos.
@@ -180,7 +180,7 @@ public abstract class SerVivo{
 }
 ```
 
-![No se puede instanciar Instrumento, pero si se puede instanciar Saxofon, Guitarra o Violin.](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/99e843e2-8667-4788-acda-a15ede448116/Untitled.png)
+![No se puede instanciar Instrumento, pero si se puede instanciar Saxofon, Guitarra o Violin.](./Adicional/Pictures/Untitled4.png)
 
 No se puede instanciar Instrumento, pero si se puede instanciar Saxofon, Guitarra o Violin.
 
@@ -219,7 +219,7 @@ public class Canario implements IHabilidadCanto{
 }
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c093fd59-e937-4883-b30d-148b0e1ab191/Untitled.png)
+![Untitled](./Adicional/Pictures/Untitled5.png)
 
 <aside>
 <img src="/icons/code_pink.svg" alt="/icons/code_pink.svg" width="40px" /> Utilizar cuando notamos comportamientos similares que obligatoriamente deben ser implementados por algunas clases.
@@ -232,7 +232,7 @@ public class Canario implements IHabilidadCanto{
 
 Comparacion entre clases abstractas e inferfaces.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/041abbac-6e37-4ebf-a210-eb2fa487d756/Untitled.png)
+![Untitled](./Adicional/Pictures/Untitled6.png)
 
 ## Miembros Estáticos
 
@@ -414,7 +414,7 @@ Una librería es un programa cuyos elementos pueden ser utilizados por otros pro
 
 Un Paquete en Java es un contenedor de clases que permite agrupar las distintas partes de un programa y que por lo general tiene una funcionalidad y elementos comunes, definiendo la ubicación de dichas clases en un directorio de estructura jerárquica.
 
-![Ejemplo de estructura de paquetes](https://prod-files-secure.s3.us-west-2.amazonaws.com/ef662f39-07c9-4823-9793-3963f5e3ea5b/f6a84f4b-f415-4eeb-94e5-d641e9f2121b/Untitled.png)
+![Ejemplo de estructura de paquetes](./Adicional/Pictures/Untitled7.png)
 
 Ejemplo de estructura de paquetes
 
@@ -471,7 +471,7 @@ Están estrechamente relacionadas a los directorios. Una librería es un directo
 
 Proporcionan los medios para agrupar lógicamente las clases relacionadas en sus correspondientes espacios de nombres, haciendo así el sistema más modular
 
-![Ejemplo de estructura de espacios de nombres](https://prod-files-secure.s3.us-west-2.amazonaws.com/ef662f39-07c9-4823-9793-3963f5e3ea5b/e01b258a-7637-4146-bb28-e77f104221ac/Untitled.png)
+![Ejemplo de estructura de espacios de nombres](./Adicional/Pictures/Untitled8.png)
 
 Ejemplo de estructura de espacios de nombres
 
@@ -523,7 +523,7 @@ Para establecer una conexión a base de datos es necesario utilizar una interfac
 
 JDBC es una API que permite la ejecución de operaciones sobre bases de datos desde el lenguaje de programación Java, independientemente del sistema operativo donde se ejecute o de la base de datos a la cual se accede, utilizando el dialecto SQL del modelo de base de datos que se utilice.
 
-![Funcionamiento de JDBC](https://prod-files-secure.s3.us-west-2.amazonaws.com/ef662f39-07c9-4823-9793-3963f5e3ea5b/960ff3d9-af3a-49eb-ae1c-a946190fd142/Untitled.png)
+![Funcionamiento de JDBC](./Adicional/Pictures/Untitled9.png)
 
 Funcionamiento de JDBC
 
